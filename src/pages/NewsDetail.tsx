@@ -2,7 +2,6 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import SEO from "../components/SEO";
-import img13 from "../assets/13.png";
 
 export default function NewsDetail() {
   const { id } = useParams<{ id: string }>();
@@ -31,7 +30,7 @@ export default function NewsDetail() {
       title: t('home.news.item4.title'),
       desc: t('home.news.item4.desc'),
       content: t('news.energy-transition.content'),
-      img: "/src/assets/windmill.jpg"
+      img: "/assets/windmill.jpg"
     },
     "milan-event-2026": {
       title: "MILANO ARCH WEEK 2026",
@@ -43,7 +42,7 @@ export default function NewsDetail() {
       title: "AITHRA: THE GENESIS",
       desc: "Come siamo passati da studio di ingegneria tradizionale a hub di innovazione tecnologica.",
       content: t('news.aithra-genesis.content'),
-      img: img13
+      img: "/assets/13.png"
     }
   };
 

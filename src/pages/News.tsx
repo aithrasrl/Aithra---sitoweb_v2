@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import SEO from "../components/SEO";
-import img13 from "../assets/13.png";
 
 type NewsCategory = 'all' | 'article' | 'publication' | 'event' | 'story';
 
@@ -55,7 +54,7 @@ export default function News() {
       title: t('home.news.item4.title'),
       date: "2026.04.10",
       desc: t('home.news.item4.desc'),
-      img: "/src/assets/windmill.jpg",
+      img: "/assets/windmill.jpg",
       link: "/news/energy-transition"
     },
     {
@@ -73,7 +72,7 @@ export default function News() {
       title: "AITHRA: THE GENESIS",
       date: "2026.01.20",
       desc: "Come siamo passati da studio di ingegneria tradizionale a hub di innovazione tecnologica.",
-      img: img13,
+      img: "/assets/13.png",
       link: "/news/aithra-story"
     }
   ];

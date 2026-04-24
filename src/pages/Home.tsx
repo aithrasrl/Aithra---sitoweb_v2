@@ -4,11 +4,6 @@ import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import { useLanguage } from "../context/LanguageContext";
 import SEO from "../components/SEO";
-import integratedDesignImg from "../assets/01_Facciata.png";
-import expertiseImg from "../assets/03a.png";
-import revitImg from "../assets/02_revit.png";
-import strDigitaliImg from "../assets/03_STR-Digitali.png";
-
 export default function Home() {
   const { t } = useLanguage();
   const x = useMotionValue(0);
@@ -67,7 +62,7 @@ export default function Home() {
             className="lg:w-1/2 aspect-[16/9] overflow-hidden border-r border-brand-black/5"
           >
             <img 
-              src={integratedDesignImg} 
+              src="/assets/01_Facciata.png" 
               alt="Integrated Design"
               className="w-full h-full object-cover hover:scale-105 transition-all duration-1000"
               referrerPolicy="no-referrer"
@@ -116,7 +111,7 @@ export default function Home() {
             className="lg:w-1/2 aspect-[16/9] overflow-hidden border-r border-brand-black/5"
           >
             <img 
-              src={strDigitaliImg} 
+              src="/assets/03_STR-Digitali.png" 
               alt="Our Approach"
               className="w-full h-full object-cover hover:scale-105 transition-all duration-1000"
               referrerPolicy="no-referrer"
@@ -175,7 +170,7 @@ export default function Home() {
             className="lg:w-1/2 aspect-[16/9] overflow-hidden border-r border-brand-black/5"
           >
             <img 
-              src={expertiseImg} 
+              src="/assets/03a.png" 
               alt="Our Expertise"
               className="w-full h-full object-cover hover:scale-105 transition-all duration-1000"
               referrerPolicy="no-referrer"
@@ -250,7 +245,7 @@ export default function Home() {
                   { id: "conto-termico", title: t('home.news.item1.title'), desc: t('home.news.item1.desc'), img: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=800", link: "/news/conto-termico" },
                   { id: "ai-engineering", title: t('home.news.item2.title'), desc: t('home.news.item2.desc'), img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800", link: "/news/ai-engineering" },
                   { id: "smart-tools", title: t('home.news.item3.title'), desc: t('home.news.item3.desc'), img: "https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&q=80&w=800", link: "/news/smart-tools" },
-                  { id: "energy-transition", title: t('home.news.item4.title'), desc: t('home.news.item4.desc'), img: "/src/assets/windmill.jpg", link: "/news/energy-transition" },
+                  { id: "energy-transition", title: t('home.news.item4.title'), desc: t('home.news.item4.desc'), img: "/assets/windmill.jpg", link: "/news/energy-transition" },
                 ].map((news, idx) => (
                   <Link 
                     key={idx} 

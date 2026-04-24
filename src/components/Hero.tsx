@@ -1,7 +1,5 @@
 import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
-import heroImage from "../assets/hero-milan.jpg";
-
 export default function Hero() {
   const { t, language } = useLanguage();
 
@@ -9,10 +7,10 @@ export default function Hero() {
     <div className="bg-brand-black">
       {/* Section 1: New Hero Design */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-        {/* Full Screen Background Image - Milan Skyline (Local Asset) */}
+        {/* Full Screen Background Image - Milan Skyline (Public Asset) */}
         <div className="absolute inset-0 z-0">
           <img 
-            src={heroImage} 
+            src="/assets/hero-milan.jpg" 
             alt="Milan Architecture Gae Aulenti"
             className="w-full h-full object-cover opacity-100"
             referrerPolicy="no-referrer"

@@ -2,8 +2,6 @@ import { motion } from "motion/react";
 import AISection from "../components/AISection";
 import { useLanguage } from "../context/LanguageContext";
 import SEO from "../components/SEO";
-import cvCAB from "../assets/CV_CAB.png";
-import cvSMM from "../assets/CV_SMM.jpeg";
 
 export default function AILab() {
   const { t } = useLanguage();
@@ -12,7 +10,7 @@ export default function AILab() {
     {
       name: t('ai.heads.01.name'),
       role: t('ai.heads.01.role'),
-      image: cvCAB,
+      image: "/assets/CV_CAB.png",
       bio: t('ai.heads.01.bio'),
       scale: 1,
       position: "object-[center_30%]"
@@ -20,7 +18,7 @@ export default function AILab() {
     {
       name: t('ai.heads.02.name'),
       role: t('ai.heads.02.role'),
-      image: cvSMM,
+      image: "/assets/CV_SMM.jpeg",
       bio: t('ai.heads.02.bio'),
       scale: 1.2,
       position: "object-[center_-10%]"

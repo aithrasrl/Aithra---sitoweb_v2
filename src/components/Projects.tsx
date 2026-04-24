@@ -2,10 +2,6 @@ import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import ghgMain from "../assets/2605_GHG9.jpg";
-import quilicoMain from "../assets/2608_PC1.png";
-import monzaMain from "../assets/2608_CSG01.png";
-
 export default function Projects() {
   const { t, language } = useLanguage();
   const [activeFilters, setActiveFilters] = useState<Record<string, string>>({
@@ -22,7 +18,7 @@ export default function Projects() {
       id: "gardone",
       title: t('project.gardone.title'),
       category: t('project.gardone.category'),
-      image: ghgMain,
+      image: "/assets/2605_GHG9.jpg",
       year: "2025",
       type: "Hospitality",
       area: 10000,
@@ -37,7 +33,7 @@ export default function Projects() {
       id: "quilico",
       title: t('project.quilico.title'),
       category: t('project.quilico.category'),
-      image: quilicoMain,
+      image: "/assets/2608_PC1.png",
       year: "2026",
       type: "Public",
       area: 1500,
@@ -52,7 +48,7 @@ export default function Projects() {
       id: "monza",
       title: t('project.monza.title'),
       category: t('project.monza.category'),
-      image: monzaMain,
+      image: "/assets/2608_CSG01.png",
       year: "2026",
       type: "Residential",
       area: 750,

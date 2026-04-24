@@ -1,42 +1,29 @@
 import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import SEO from "../components/SEO";
-import cvCAB from "../assets/CV_CAB.png";
-import cvPIB from "../assets/CV_PIB2.jpeg";
-import cvFRN from "../assets/CV_FRN.png";
-import cvSMM from "../assets/CV_SMM.jpeg";
-import cvDAC from "../assets/CV_DAC.jpeg";
-import cvBRJ from "../assets/CV_BRJ.jpeg";
-import cvWIK from "../assets/CV_WIK.jpeg";
-import img13 from "../assets/13.png";
-import img11 from "../assets/11.png";
-import img12 from "../assets/12.jpeg";
-import img14 from "../assets/14.png";
-import img15 from "../assets/15.png";
-import img19 from "../assets/19.png";
 
 export default function About() {
   const { t } = useLanguage();
 
   const officeGallery = [
-    { img: img11, id: "11" },
-    { img: img12, id: "12" },
-    { img: img14, id: "14" },
-    { img: img15, id: "15" },
-    { img: img19, id: "19" }
+    { img: "/assets/11.png", id: "11" },
+    { img: "/assets/12.jpeg", id: "12" },
+    { img: "/assets/14.png", id: "14" },
+    { img: "/assets/15.png", id: "15" },
+    { img: "/assets/19.png", id: "19" }
   ];
 
   const boardMembers = [
-    { name: t('about.team.member.01.name'), role: t('about.team.member.01.role'), degree: t('about.team.member.01.degree'), img: cvCAB, scale: 1, position: "object-[center_30%]" },
-    { name: t('about.team.member.02.name'), role: t('about.team.member.02.role'), degree: t('about.team.member.02.degree'), img: cvPIB, scale: 1.2, position: "object-top" },
-    { name: t('about.team.member.03.name'), role: t('about.team.member.03.role'), degree: t('about.team.member.03.degree'), img: cvFRN, scale: 1, position: "object-[center_30%]" },
+    { name: t('about.team.member.01.name'), role: t('about.team.member.01.role'), degree: t('about.team.member.01.degree'), img: "/assets/CV_CAB.png", scale: 1, position: "object-[center_30%]" },
+    { name: t('about.team.member.02.name'), role: t('about.team.member.02.role'), degree: t('about.team.member.02.degree'), img: "/assets/CV_PIB2.jpeg", scale: 1.2, position: "object-top" },
+    { name: t('about.team.member.03.name'), role: t('about.team.member.03.role'), degree: t('about.team.member.03.degree'), img: "/assets/CV_FRN.png", scale: 1, position: "object-[center_30%]" },
   ];
 
   const employees = [
-    { name: t('about.team.employee.01.name'), role: t('about.team.employee.01.role'), degree: t('about.team.employee.01.degree'), img: cvSMM, scale: 1.2, position: "object-[center_-10%]" },
-    { name: t('about.team.employee.02.name'), role: t('about.team.employee.02.role'), degree: t('about.team.employee.02.degree'), img: cvDAC, scale: 1, position: "object-top" },
-    { name: t('about.team.employee.03.name'), role: t('about.team.employee.03.role'), degree: t('about.team.employee.03.degree'), img: cvBRJ, scale: 1 },
-    { name: t('about.team.employee.04.name'), role: t('about.team.employee.04.role'), degree: t('about.team.employee.04.degree'), img: cvWIK, scale: 1.25, position: "object-[35%_top]" },
+    { name: t('about.team.employee.01.name'), role: t('about.team.employee.01.role'), degree: t('about.team.employee.01.degree'), img: "/assets/CV_SMM.jpeg", scale: 1.2, position: "object-[center_-10%]" },
+    { name: t('about.team.employee.02.name'), role: t('about.team.employee.02.role'), degree: t('about.team.employee.02.degree'), img: "/assets/CV_DAC.jpeg", scale: 1, position: "object-top" },
+    { name: t('about.team.employee.03.name'), role: t('about.team.employee.03.role'), degree: t('about.team.employee.03.degree'), img: "/assets/CV_BRJ.jpeg", scale: 1 },
+    { name: t('about.team.employee.04.name'), role: t('about.team.employee.04.role'), degree: t('about.team.employee.04.degree'), img: "/assets/CV_WIK.jpeg", scale: 1.25, position: "object-[35%_top]" },
   ];
 
   const locations = [
@@ -75,7 +62,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="aspect-[4/5] bg-brand-black/5 border border-brand-black/10 overflow-hidden relative">
                <img 
-                src={img13} 
+                src="/assets/13.png" 
                 alt="Studio Life"
                 className="w-full h-full object-cover opacity-100"
                 referrerPolicy="no-referrer"

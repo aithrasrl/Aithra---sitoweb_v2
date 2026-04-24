@@ -1,10 +1,5 @@
 import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
-import laserScannerImg from "../assets/laser-scanner.jpg";
-import facciataImg from "../assets/01_Facciata.png";
-import revitImg from "../assets/02_revit.png";
-import tenderImg from "../assets/03_STR-Digitali.png";
-
 export default function Services() {
   const { t } = useLanguage();
 
@@ -21,7 +16,7 @@ export default function Services() {
       title: t('services.architettura.title'),
       desc: t('services.architettura.desc'),
       items: t('services.architettura.items').split(', '),
-      image: facciataImg
+      image: "/assets/01_Facciata.png"
     },
     {
       id: "03",
@@ -32,7 +27,7 @@ export default function Services() {
     },
     {
       id: "04",
-      title: t('services.impianti.title'),
+      title: t('services. impianti.title'),
       desc: t('services.impianti.desc'),
       items: t('services.impianti.items').split(', '),
       image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200"
@@ -42,21 +37,21 @@ export default function Services() {
       title: t('services.ai.title'),
       desc: t('services.ai.desc'),
       items: t('services.ai.items').split(', '),
-      image: revitImg
+      image: "/assets/02_revit.png"
     },
     {
       id: "06",
       title: t('services.tender.title'),
       desc: t('services.tender.desc'),
       items: t('services.tender.items').split(', '),
-      image: tenderImg
+      image: "/assets/03_STR-Digitali.png"
     },
     {
       id: "07",
       title: t('services.rilievo.title'),
       desc: t('services.rilievo.desc'),
       items: t('services.rilievo.items').split(', '),
-      image: laserScannerImg
+      image: "/assets/laser-scanner.jpg"
     }
   ];
 

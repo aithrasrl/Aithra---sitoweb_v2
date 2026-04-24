@@ -2,8 +2,6 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
-import logoAithra from "../assets/LOGO_AITHRA.png";
-
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -24,7 +22,7 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 w-full z-[70] h-24 grid grid-cols-3 items-center px-6 lg:px-12 bg-brand-white/80 backdrop-blur-sm">
         <div className="flex justify-start">
           <Link to="/" className="flex items-center gap-2 group">
-            <img src={logoAithra} alt="AITHRA Logo" className="h-8 w-auto transition-opacity group-hover:opacity-80" />
+            <img src="/assets/LOGO_AITHRA.png" alt="AITHRA Logo" className="h-8 w-auto transition-opacity group-hover:opacity-80" />
           </Link>
         </div>
 
@@ -59,7 +57,7 @@ export default function Navbar() {
           >
             <div className="h-24 flex items-center justify-between px-6 lg:px-12">
               <Link to="/" onClick={() => setIsMenuOpen(false)} className="opacity-40 hover:opacity-100 transition-opacity">
-                <img src={logoAithra} alt="AITHRA Logo" className="h-6 w-auto" />
+                <img src="/assets/LOGO_AITHRA.png" alt="AITHRA Logo" className="h-6 w-auto" />
               </Link>
               <div className="flex items-center gap-6">
                 <button 

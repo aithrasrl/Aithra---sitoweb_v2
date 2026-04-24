@@ -1,6 +1,4 @@
 import { useLanguage } from "../context/LanguageContext";
-import logoAithra from "../assets/LOGO_AITHRA.png";
-
 export default function Footer() {
   const { t } = useLanguage();
 
@@ -10,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-24">
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-8">
-              <img src={logoAithra} alt="AITHRA Logo" className="h-10 w-auto" />
+              <img src="/assets/LOGO_AITHRA.png" alt="AITHRA Logo" className="h-10 w-auto" />
             </div>
             <p className="text-brand-black/40 text-xs leading-relaxed mb-10 max-w-xs font-medium">
               {t('footer.desc')}

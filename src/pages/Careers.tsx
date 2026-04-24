@@ -2,15 +2,11 @@ import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import SEO from "../components/SEO";
 import { useState } from "react";
-import img17 from "../assets/17.jpeg";
-import img18 from "../assets/18.jpeg";
-import img03a from "../assets/03a.png";
-
 export default function Careers() {
   const { t } = useLanguage();
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
-  const gallery = [img17, img18, img03a];
+  const gallery = ["/assets/17.jpeg", "/assets/18.jpeg", "/assets/03a.png"];
 
   const positions = [
     {

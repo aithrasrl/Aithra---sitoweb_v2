@@ -5,38 +5,30 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import SEO from "../components/SEO";
 
-// Gardone Images
-import ghg1 from "../assets/2605_GHG1.png";
-import ghg2 from "../assets/2605_GHG2.png";
-import ghg3 from "../assets/2605_GHG3.png";
-import ghg4 from "../assets/2605_GHG4.png";
-import ghg5 from "../assets/2605_GHG5.jpg";
-import ghg6 from "../assets/2605_GHG6.jpg";
-import ghg7 from "../assets/2605_GHG7.jpg";
-import ghg8 from "../assets/2605_GHG8.jpg";
-import ghg9 from "../assets/2605_GHG9.jpg";
-
-// Quilico Images
-import pc1 from "../assets/2608_PC1.png";
-import pc2 from "../assets/2608_PC2.png";
-import pc3 from "../assets/2608_PC3.png";
-
-// Cascina San Giuseppe Images
-import csg1 from "../assets/2608_CSG01.png";
-import csg2 from "../assets/2608_CSG02.png";
-import csg3 from "../assets/2608_CSG03.png";
-import csg4 from "../assets/2608_CSG04.png";
-
+// Gardone Images (Public Assets Paths)
 const ghgAssets = {
-  ghg1: ghg1,
-  ghg2: ghg2,
-  ghg3: ghg3,
-  ghg4: ghg4,
-  ghg5: ghg5,
-  ghg6: ghg6,
-  ghg7: ghg7,
-  ghg8: ghg8,
-  ghg9: ghg9
+  ghg1: "/assets/2605_GHG1.png",
+  ghg2: "/assets/2605_GHG2.png",
+  ghg3: "/assets/2605_GHG3.png",
+  ghg4: "/assets/2605_GHG4.png",
+  ghg5: "/assets/2605_GHG5.jpg",
+  ghg6: "/assets/2605_GHG6.jpg",
+  ghg7: "/assets/2605_GHG7.jpg",
+  ghg8: "/assets/2605_GHG8.jpg",
+  ghg9: "/assets/2605_GHG9.jpg"
+};
+
+const pcAssets = {
+  pc1: "/assets/2608_PC1.png",
+  pc2: "/assets/2608_PC2.png",
+  pc3: "/assets/2608_PC3.png"
+};
+
+const csgAssets = {
+  csg1: "/assets/2608_CSG01.png",
+  csg2: "/assets/2608_CSG02.png",
+  csg3: "/assets/2608_CSG03.png",
+  csg4: "/assets/2608_CSG04.png"
 };
 
 export default function ProjectDetail() {
@@ -73,11 +65,11 @@ export default function ProjectDetail() {
       title: t('project.quilico.title'),
       location: t('project.quilico.location'),
       category: t('project.quilico.category'),
-      image: pc1,
-      images: [pc2, pc3],
-      gallery: [pc1, pc2, pc3],
+      image: pcAssets.pc1,
+      images: [pcAssets.pc2, pcAssets.pc3],
+      gallery: [pcAssets.pc1, pcAssets.pc2, pcAssets.pc3],
       strips: {
-        evoluzione: [pc1, pc2, pc3]
+        evoluzione: [pcAssets.pc1, pcAssets.pc2, pcAssets.pc3]
       },
       client: "Comune di Pavone Canavese",
       services: t('project.quilico.services'),
@@ -95,11 +87,11 @@ export default function ProjectDetail() {
       title: t('project.monza.title'),
       location: t('project.monza.location'),
       category: t('project.monza.category'),
-      image: csg1,
-      images: [csg2, csg3],
-      gallery: [csg1, csg2, csg3, csg4],
+      image: csgAssets.csg1,
+      images: [csgAssets.csg2, csgAssets.csg3],
+      gallery: [csgAssets.csg1, csgAssets.csg2, csgAssets.csg3, csgAssets.csg4],
       strips: {
-        evoluzione: [csg1, csg2, csg3, csg4]
+        evoluzione: [csgAssets.csg1, csgAssets.csg2, csgAssets.csg3, csgAssets.csg4]
       },
       client: "Condominio Cascina San Giuseppe",
       services: t('project.monza.services'),
