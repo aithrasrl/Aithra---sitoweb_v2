@@ -27,12 +27,32 @@ export default function Transparency() {
       desc: t('privacy.section.controller.desc')
     },
     {
-      title: t('privacy.section.purposes.title'),
-      desc: t('privacy.section.purposes.desc')
+      title: t('privacy.section.place.title'),
+      desc: t('privacy.section.place.desc')
     },
     {
       title: t('privacy.section.data.title'),
       desc: t('privacy.section.data.desc')
+    },
+    {
+      title: t('privacy.section.principles.title'),
+      desc: t('privacy.section.principles.desc')
+    },
+    {
+      title: t('privacy.section.social.title'),
+      desc: t('privacy.section.social.desc')
+    },
+    {
+      title: t('privacy.section.transfer.title'),
+      desc: t('privacy.section.transfer.desc')
+    },
+    {
+      title: t('privacy.section.recipients.title'),
+      desc: t('privacy.section.recipients.desc')
+    },
+    {
+      title: t('privacy.section.cookies.title'),
+      desc: t('privacy.section.cookies.desc')
     },
     {
       title: t('privacy.section.rights.title'),

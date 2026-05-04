@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 export default function Footer() {
   const { t } = useLanguage();
@@ -24,13 +25,13 @@ export default function Footer() {
             <div>
               <h4 className="text-[9px] font-mono uppercase tracking-[0.4em] text-brand-black/20 mb-8">{t('footer.navigation')}</h4>
               <ul className="space-y-4 text-[10px] font-mono uppercase tracking-widest">
-                <li><a href="/projects" className="text-brand-black/60 hover:text-brand-accent">01. {t('nav.projects')}</a></li>
-                <li><a href="/services" className="text-brand-black/60 hover:text-brand-accent">02. {t('nav.services')}</a></li>
-                <li><a href="/ai-lab" className="text-brand-black/60 hover:text-brand-accent">03. {t('nav.ailab')}</a></li>
-                <li><a href="/news" className="text-brand-black/60 hover:text-brand-accent">04. {t('nav.news')}</a></li>
-                <li><a href="/about" className="text-brand-black/60 hover:text-brand-accent">05. {t('nav.about')}</a></li>
-                <li><a href="/careers" className="text-brand-black/60 hover:text-brand-accent">06. {t('nav.careers')}</a></li>
-                <li><a href="/contact" className="text-brand-black/60 hover:text-brand-accent">07. {t('nav.contact')}</a></li>
+                <li><Link to="/projects" className="text-brand-black/60 hover:text-brand-accent">01. {t('nav.projects')}</Link></li>
+                <li><Link to="/services" className="text-brand-black/60 hover:text-brand-accent">02. {t('nav.services')}</Link></li>
+                <li><Link to="/ai-lab" className="text-brand-black/60 hover:text-brand-accent">03. {t('nav.ailab')}</Link></li>
+                <li><Link to="/news" className="text-brand-black/60 hover:text-brand-accent">04. {t('nav.news')}</Link></li>
+                <li><Link to="/about" className="text-brand-black/60 hover:text-brand-accent">05. {t('nav.about')}</Link></li>
+                <li><Link to="/careers" className="text-brand-black/60 hover:text-brand-accent">06. {t('nav.careers')}</Link></li>
+                <li><Link to="/contact" className="text-brand-black/60 hover:text-brand-accent">07. {t('nav.contact')}</Link></li>
               </ul>
             </div>
             <div>
@@ -40,10 +41,7 @@ export default function Footer() {
                   <span className="text-brand-black/20 mr-3">[E]</span>
                   info@aithra.it
                 </li>
-                <li className="text-brand-black/60">
-                  <span className="text-brand-black/20 mr-3">[T]</span>
-                  +39 393 3293206
-                </li>
+                {/* [T] +39 393 3293206 removed temporarily */}
                 <li className="text-brand-black/60">
                   <span className="text-brand-black/20 mr-3">[A]</span>
                   Viale Col di Lana 8, 20136 Milano
@@ -62,12 +60,12 @@ export default function Footer() {
                 <button className="text-[10px] font-mono uppercase tracking-widest text-brand-accent">{t('footer.join')}</button>
               </div>
               <div className="mt-8">
-                <a 
-                  href="/trasparenza" 
+                <Link 
+                  to="/trasparenza" 
                   className="text-[9px] font-mono uppercase tracking-[0.3em] text-brand-black/20 hover:text-brand-accent transition-colors block"
                 >
                   {t('footer.transparency')}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

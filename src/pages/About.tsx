@@ -21,9 +21,9 @@ export default function About() {
 
   const employees = [
     { name: t('about.team.employee.01.name'), role: t('about.team.employee.01.role'), degree: t('about.team.employee.01.degree'), img: "/assets/CV_SMM.jpeg", scale: 1.2, position: "object-[center_-10%]" },
-    { name: t('about.team.employee.02.name'), role: t('about.team.employee.02.role'), degree: t('about.team.employee.02.degree'), img: "/assets/CV_DAC.jpeg", scale: 1, position: "object-top" },
-    { name: t('about.team.employee.03.name'), role: t('about.team.employee.03.role'), degree: t('about.team.employee.03.degree'), img: "/assets/CV_BRJ.jpeg", scale: 1 },
-    { name: t('about.team.employee.04.name'), role: t('about.team.employee.04.role'), degree: t('about.team.employee.04.degree'), img: "/assets/CV_WIK.jpeg", scale: 1.25, position: "object-[35%_top]" },
+    { name: t('about.team.employee.02.name'), role: t('about.team.employee.02.role'), degree: t('about.team.employee.02.degree'), img: "/assets/CV_CAB.png", scale: 1, position: "object-[center_30%]" },
+    { name: t('about.team.employee.03.name'), role: t('about.team.employee.03.role'), degree: t('about.team.employee.03.degree'), img: "/assets/CV_PIB2.jpeg", scale: 1.2, position: "object-top" },
+    { name: t('about.team.employee.04.name'), role: t('about.team.employee.04.role'), degree: t('about.team.employee.04.degree'), img: "/assets/CV_FRN.png", scale: 1, position: "object-[center_30%]" },
   ];
 
   const locations = [

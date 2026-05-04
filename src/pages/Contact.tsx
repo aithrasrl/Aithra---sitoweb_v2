@@ -67,10 +67,10 @@ export default function Contact() {
                   <h4 className="text-[10px] font-mono uppercase tracking-[0.3em] text-brand-black/40 mb-4">{t('contact.details.inquiries')}</h4>
                   <p className="text-xl font-bold text-brand-deep">info@aithra.it</p>
                 </div>
-                <div>
+                {/* <div>
                   <h4 className="text-[10px] font-mono uppercase tracking-[0.3em] text-brand-black/40 mb-4">{t('contact.details.phone')}</h4>
                   <p className="text-xl font-bold text-brand-deep">+39 393 3293206</p>
-                </div>
+                </div> */}
                 <div>
                   <h4 className="text-[10px] font-mono uppercase tracking-[0.3em] text-brand-black/40 mb-4">{t('contact.details.office')}</h4>
                   <p className="text-xl font-bold text-brand-deep">Viale Col di Lana 8, 20136 Milano, Italy</p>

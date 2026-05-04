@@ -110,10 +110,10 @@ export default function Navbar() {
                   <h4 className="text-[10px] font-mono uppercase tracking-widest text-brand-deep/40 mb-2">Inquiries</h4>
                   <p className="text-sm font-bold">info@aithra.it</p>
                 </div>
-                <div>
+                {/* <div>
                   <h4 className="text-[10px] font-mono uppercase tracking-widest text-brand-deep/40 mb-2">Phone</h4>
                   <p className="text-sm font-bold">+39 393 3293206</p>
-                </div>
+                </div> */}
                 <div>
                   <h4 className="text-[10px] font-mono uppercase tracking-widest text-brand-deep/40 mb-2">Location</h4>
                   <p className="text-sm font-bold">Milan, Italy</p>

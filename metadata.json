@@ -1,5 +1,6 @@
 {
-  "name": "Remix: AITHRA - Integrated Engineering \u0026 AI",
+  "name": "AITHRA_Web site",
   "description": "Integrated engineering firm specializing in Engineering, Structures, and MEP, powered by AI and smart design.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": []
 }
